@@ -102,7 +102,7 @@ def bakeTransaction(**kw):
 
 	Return dict
 	"""
-	kw = dict([k,v] for k,v in kw.items() if v)
+	kw = dict([k, v] for k, v in kw.items() if v)
 
 	if "publicKey" in kw and "privateKey" in kw:
 		keys = {}
@@ -130,7 +130,8 @@ def bakeTransaction(**kw):
 	}
 
 	# add optional data
-	for key in ["requesterPublicKey", "recipientId", "vendorField", "asset", "signature", "signSignature", "id"]:
+	for key in ["requesterPublicKey", "recipientId", "vendorField", "asset", "signature", 
+				"signSignature", "id"]:
 		if key in kw:
 			payload[key] = kw[key]
 
@@ -229,4 +230,3 @@ def downVoteDelegate(usernames, secret, secondSecret=None):
 			secondSecret=secondSecret,
 			asset={"votes": ["-%s" % req["delegate"]["publicKey"]]}
 		)
-

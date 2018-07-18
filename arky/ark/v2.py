@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 # © Toons
 
-from six import PY3
+import struct
+
 from collections import OrderedDict
+from six import PY3
 
 from .. import slots
 from .. import rest
@@ -10,9 +12,6 @@ from .. import cfg
 
 from . import crypto
 from . import init
-
-import struct
-		
 
 class Payload(object):
 
@@ -263,7 +262,7 @@ def sendPayload(*payloads):
 
 
 def bakeTransaction(**kw):
-	kw = dict([k,v] for k,v in kw.items() if v)
+	kw = dict([k, v] for k, v in kw.items() if v)
 	tx = Transaction(**kw)
 	tx.finalize(**kw)
 	tx.sign(**kw)
@@ -275,7 +274,7 @@ def bakeTransaction(**kw):
 # high-level broadcasting function for a single tx #
 ####################################################
 def sendTransaction(**kw):
-	tx = bakeTransaction(**dict([k,v] for k,v in kw.items() if v))
+	tx = bakeTransaction(**dict([k, v] for k, v in kw.items() if v))
 	sendPayload(tx)
 
 

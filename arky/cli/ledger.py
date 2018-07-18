@@ -103,7 +103,7 @@ def send(param):
 		if amount:
 			sys.stdout.write("Use ledger key to confirm or or cancel :\n")
 			sys.stdout.write("    Send %(amount).8f %(token)s to %(recipientId)s ?\n" % \
-		                    {"token": cfg.token, "amount": amount, "recipientId": param["<address>"]})
+							{"token": cfg.token, "amount": amount, "recipientId": param["<address>"]})
 			tx = dict(
 				type=0,
 				timestamp=int(slots.getTime()),
