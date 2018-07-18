@@ -8,7 +8,7 @@ from arky.rest import use as use_network
 class TestV2Transaction(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
-        unittest.TestCase.__init__(self, args, **kwargs)
+        unittest.TestCase.__init__(self, *args, **kwargs)
         try:
             use_network("ark2")
         except:
@@ -23,7 +23,6 @@ class TestV2Transaction(unittest.TestCase):
         assert tx["network"] == cfg.marker
         assert tx["type"] == 0x00
         
-
 
 if __name__ == '__main__':
     unittest.main()

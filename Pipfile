@@ -11,10 +11,9 @@ requests = "*"
 ecdsa = "*"
 pynacl = "*"
 pytz = "*"
-"base58" = "*"
+base58 = "*"
 docopt = "*"
 ledgerblue = "*"
-ecpy = {version = "==0.8.2"}
 
 
 [dev-packages]

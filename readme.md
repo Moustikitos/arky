@@ -1,4 +1,4 @@
-Copyright 2016-2018 **Toons**, Copyright 2018 **ARK**, [MIT licence](http://htmlpreview.github.com/?https://github.com/Moustikitos/arky/blob/master/arky.html)
+Copyright 2016-2018 **Toons**, Copyright 2018 **ARK**, [MIT licence](http://htmlpreview.github.com/?https://github.com/ArkEcosystem/arky/blob/master/arky.html)
 
 # Install
 
@@ -179,3 +179,6 @@ hot@toxy/account[18160...4874X]>
 # Author
 
 Toons <moustikitos@gmail.com>
+
+# Contributors
+
