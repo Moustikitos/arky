@@ -16,13 +16,13 @@ class TestV2Transaction(unittest.TestCase):
         else:
             self.__tx0 = arky.core.Transaction()
 
-    def test_transaction_getitem(self):
-        tx = arky.core.Transaction()
-        assert tx["head"] == 0xff
-        assert tx["version"] == 0x02
-        assert tx["network"] == cfg.marker
-        assert tx["type"] == 0x00
-        
+	def test_transaction_getitem(self):
+		tx = arky.core.Transaction()
+		assert tx["head"] == 0xff
+		assert tx["version"] == 0x02
+		assert tx["network"] == cfg.marker
+		assert tx["type"] == 0x00
+		
 
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()
