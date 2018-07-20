@@ -1,4 +1,4 @@
-Copyright 2016-2018 **Toons**, Copyright 2018 **ARK**, [MIT licence](http://htmlpreview.github.com/?https://github.com/ArkEcosystem/arky/blob/master/arky.html)
+Copyright 2016-2018 **Toons**, [MIT licence](http://htmlpreview.github.com/?https://github.com/ArkEcosystem/arky/blob/master/arky.html)
 
 # Install
 
@@ -6,17 +6,17 @@ Copyright 2016-2018 **Toons**, Copyright 2018 **ARK**, [MIT licence](http://html
 
 From development version
 
-`sudo -H pip install https://github.com/ArkEcosystem/arky/archive/aip11.zip`
+`sudo -H pip install https://github.com/Moustikitos/arky/archive/aip11-dev.zip`
 
 If you work with `python3`
 
-`sudo -H pip3 install https://github.com/ArkEcosystem/arky/archive/aip11.zip`
+`sudo -H pip3 install https://github.com/Moustikitos/arky/archive/aip11-dev.zip`
 
 ## Windows 
 
 From development version
 
-`pip install https://github.com/ArkEcosystem/arky/archive/aip11.zip`
+`pip install https://github.com/Moustikitos/arky/archive/aip11-dev.zip`
 
 # REST API
 
